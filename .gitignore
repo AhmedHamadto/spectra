@@ -1,0 +1,14 @@
+.DS_Store
+*.swp
+*.swo
+*~
+.env*
+
+# Editors
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# OS
+Thumbs.db

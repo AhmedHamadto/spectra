@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0f"/>
+      <stop offset="50%" stop-color="#0d0d1a"/>
+      <stop offset="100%" stop-color="#0a0a0f"/>
+    </linearGradient>
+    <linearGradient id="spectra-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#818cf8"/>
+      <stop offset="25%" stop-color="#a78bfa"/>
+      <stop offset="50%" stop-color="#c084fc"/>
+      <stop offset="75%" stop-color="#e879f9"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+    <linearGradient id="line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#818cf8" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#c084fc" stop-opacity="0.6"/>
+      <stop offset="80%" stop-color="#f472b6" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#f472b6" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="glow1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="glow2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="glow3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e879f9" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#e879f9" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="glow4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f472b6" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#f472b6" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="blur-lg">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+    <filter id="blur-sm">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="640" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.03" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="160" x2="1280" y2="160"/>
+    <line x1="0" y1="320" x2="1280" y2="320"/>
+    <line x1="0" y1="480" x2="1280" y2="480"/>
+    <line x1="320" y1="0" x2="320" y2="640"/>
+    <line x1="640" y1="0" x2="640" y2="640"/>
+    <line x1="960" y1="0" x2="960" y2="640"/>
+  </g>
+
+  <!-- Ambient glow orbs -->
+  <circle cx="200" cy="300" r="200" fill="#818cf8" opacity="0.04" filter="url(#blur-lg)"/>
+  <circle cx="1080" cy="340" r="200" fill="#f472b6" opacity="0.04" filter="url(#blur-lg)"/>
+  <circle cx="640" cy="200" r="150" fill="#c084fc" opacity="0.03" filter="url(#blur-lg)"/>
+
+  <!-- Title: SPECTRA -->
+  <text x="640" y="205" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="96" font-weight="800" letter-spacing="12" fill="url(#spectra-grad)">SPECTRA</text>
+
+  <!-- Title glow -->
+  <text x="640" y="205" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="96" font-weight="800" letter-spacing="12" fill="url(#spectra-grad)" filter="url(#blur-sm)" opacity="0.5">SPECTRA</text>
+
+  <!-- Tagline -->
+  <text x="640" y="260" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="400" fill="#a1a1aa" letter-spacing="1">See your AI-built codebase from every angle.</text>
+
+  <!-- Divider line -->
+  <rect x="140" y="300" width="1000" height="1" fill="url(#line-grad)" rx="1"/>
+
+  <!-- Four layers -->
+  <g transform="translate(0, 360)">
+    <!-- Blueprint -->
+    <g transform="translate(185, 0)">
+      <rect x="-45" y="-50" width="170" height="120" rx="12" fill="url(#glow1)" opacity="0.5"/>
+      <rect x="-45" y="-50" width="170" height="120" rx="12" fill="none" stroke="#818cf8" stroke-width="1" opacity="0.2"/>
+      <text x="40" y="-10" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="700" fill="#818cf8">Blueprint</text>
+      <text x="40" y="25" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#71717a">What was built?</text>
+    </g>
+
+    <!-- Alignment -->
+    <g transform="translate(450, 0)">
+      <rect x="-45" y="-50" width="170" height="120" rx="12" fill="url(#glow2)" opacity="0.5"/>
+      <rect x="-45" y="-50" width="170" height="120" rx="12" fill="none" stroke="#a78bfa" stroke-width="1" opacity="0.2"/>
+      <text x="40" y="-10" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="700" fill="#a78bfa">Alignment</text>
+      <text x="40" y="25" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#71717a">Spec vs reality?</text>
+    </g>
+
+    <!-- Trust -->
+    <g transform="translate(715, 0)">
+      <rect x="-45" y="-50" width="170" height="120" rx="12" fill="url(#glow3)" opacity="0.5"/>
+      <rect x="-45" y="-50" width="170" height="120" rx="12" fill="none" stroke="#e879f9" stroke-width="1" opacity="0.2"/>
+      <text x="40" y="-10" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="700" fill="#e879f9">Trust</text>
+      <text x="40" y="25" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#71717a">Can you ship it?</text>
+    </g>
+
+    <!-- Ownership -->
+    <g transform="translate(980, 0)">
+      <rect x="-45" y="-50" width="170" height="120" rx="12" fill="url(#glow4)" opacity="0.5"/>
+      <rect x="-45" y="-50" width="170" height="120" rx="12" fill="none" stroke="#f472b6" stroke-width="1" opacity="0.2"/>
+      <text x="40" y="-10" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="700" fill="#f472b6">Ownership</text>
+      <text x="40" y="25" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#71717a">How to talk about it?</text>
+    </g>
+
+    <!-- Connecting arrows between layers -->
+    <g stroke="#3f3f46" stroke-width="1.5" fill="none" opacity="0.4">
+      <line x1="310" y1="0" x2="365" y2="0" marker-end="url(#arrowhead)"/>
+      <line x1="575" y1="0" x2="630" y2="0"/>
+      <line x1="840" y1="0" x2="895" y2="0"/>
+    </g>
+
+    <!-- Arrow chevrons -->
+    <g fill="#3f3f46" opacity="0.4">
+      <polygon points="370,-5 380,0 370,5"/>
+      <polygon points="635,-5 645,0 635,5"/>
+      <polygon points="900,-5 910,0 900,5"/>
+    </g>
+  </g>
+
+  <!-- Bottom bar -->
+  <text x="640" y="540" text-anchor="middle" font-family="ui-monospace, 'SF Mono', 'Cascadia Mono', monospace" font-size="16" fill="#52525b" letter-spacing="0.5">Built for Claude Code  ·  Zero dependencies  ·  MIT License</text>
+
+  <!-- Corner accent dots -->
+  <circle cx="40" cy="40" r="3" fill="#818cf8" opacity="0.3"/>
+  <circle cx="1240" cy="40" r="3" fill="#f472b6" opacity="0.3"/>
+  <circle cx="40" cy="600" r="3" fill="#818cf8" opacity="0.3"/>
+  <circle cx="1240" cy="600" r="3" fill="#f472b6" opacity="0.3"/>
+</svg>

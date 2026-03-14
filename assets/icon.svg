@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="icon-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f0f1a"/>
+      <stop offset="100%" stop-color="#0a0a12"/>
+    </linearGradient>
+    <linearGradient id="prism-fill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16162a"/>
+    </linearGradient>
+    <linearGradient id="prism-stroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="ray1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="ray2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="ray3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="ray4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e879f9"/>
+      <stop offset="100%" stop-color="#e879f9" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="ray-in" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e2e8f0" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#e2e8f0" stop-opacity="0.6"/>
+    </linearGradient>
+    <filter id="icon-glow">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <filter id="ray-glow">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="96" fill="url(#icon-bg)"/>
+
+  <!-- Subtle radial glow behind prism -->
+  <circle cx="220" cy="256" r="120" fill="#818cf8" opacity="0.06" filter="url(#icon-glow)"/>
+
+  <!-- Incoming light ray (white, single beam) -->
+  <line x1="60" y1="256" x2="185" y2="256" stroke="url(#ray-in)" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Prism (triangle) -->
+  <polygon points="190,160 280,352 100,352" fill="url(#prism-fill)" stroke="url(#prism-stroke)" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Inner prism reflection -->
+  <polygon points="190,160 280,352 100,352" fill="none" stroke="#818cf8" stroke-width="1" stroke-linejoin="round" opacity="0.15"/>
+  <line x1="190" y1="170" x2="270" y2="340" stroke="#a78bfa" stroke-width="0.5" opacity="0.1"/>
+
+  <!-- Spectral rays emerging from right face of prism -->
+  <!-- Ray 1 - Indigo (top) -->
+  <line x1="250" y1="230" x2="440" y2="140" stroke="url(#ray1)" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="250" y1="230" x2="440" y2="140" stroke="#818cf8" stroke-width="6" stroke-linecap="round" opacity="0.15" filter="url(#ray-glow)"/>
+
+  <!-- Ray 2 - Violet -->
+  <line x1="260" y1="260" x2="440" y2="220" stroke="url(#ray2)" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="260" y1="260" x2="440" y2="220" stroke="#a78bfa" stroke-width="6" stroke-linecap="round" opacity="0.15" filter="url(#ray-glow)"/>
+
+  <!-- Ray 3 - Purple -->
+  <line x1="268" y1="290" x2="440" y2="300" stroke="url(#ray3)" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="268" y1="290" x2="440" y2="300" stroke="#c084fc" stroke-width="6" stroke-linecap="round" opacity="0.15" filter="url(#ray-glow)"/>
+
+  <!-- Ray 4 - Pink (bottom) -->
+  <line x1="274" y1="320" x2="440" y2="380" stroke="url(#ray4)" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="274" y1="320" x2="440" y2="380" stroke="#e879f9" stroke-width="6" stroke-linecap="round" opacity="0.15" filter="url(#ray-glow)"/>
+
+  <!-- Small dots at ray endpoints for polish -->
+  <circle cx="440" cy="140" r="3" fill="#818cf8" opacity="0.5"/>
+  <circle cx="440" cy="220" r="3" fill="#a78bfa" opacity="0.5"/>
+  <circle cx="440" cy="300" r="3" fill="#c084fc" opacity="0.5"/>
+  <circle cx="440" cy="380" r="3" fill="#e879f9" opacity="0.5"/>
+</svg>
