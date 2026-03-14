@@ -1,14 +1,10 @@
 <p align="center">
-  <img src="assets/icon.svg" width="120" alt="Spectra">
-  <h1 align="center">Spectra</h1>
-  <p align="center">
-    <strong>See your AI-built codebase from every angle.</strong>
-  </p>
-  <p align="center">
-    <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT License"></a>
-    <a href="https://docs.anthropic.com/en/docs/claude-code/overview"><img src="https://img.shields.io/badge/built%20for-Claude%20Code-7C3AED" alt="Claude Code"></a>
-    <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
-  </p>
+  <img src="assets/social-preview.svg" width="720" alt="Spectra — See your AI-built codebase from every angle">
+</p>
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT License"></a>
+  <a href="https://docs.anthropic.com/en/docs/claude-code/overview"><img src="https://img.shields.io/badge/built%20for-Claude%20Code-7C3AED" alt="Claude Code"></a>
+  <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
 </p>
 
 Unlike code reviewers that find bugs or linters that enforce style, Spectra gives you the confidence to ship AI-built code and speak to it like you built it yourself.
