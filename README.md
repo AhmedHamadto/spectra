@@ -12,16 +12,10 @@ Unlike code reviewers that find bugs or linters that enforce style, Spectra give
 ## Quick Start
 
 ```bash
-# Install globally (30 seconds)
-git clone https://github.com/ahmedhamadto/spectra.git
-mkdir -p ~/.claude/commands
-cp -r spectra/.claude/commands/ ~/.claude/commands/
-
-# Run it
-/spectra ./src
+npx skillsadd ahmedhamadto/spectra
 ```
 
-That's it. No dependencies, no API keys, no config.
+That's it. No dependencies, no API keys, no config. Start a new Claude Code session and run `/spectra ./src`.
 
 ## The Problem
 
@@ -54,7 +48,13 @@ Spectra fixes this.
 
 ## Install
 
-### Per-project (recommended)
+### One command (recommended)
+
+```bash
+npx skillsadd ahmedhamadto/spectra
+```
+
+### Manual — per-project
 
 ```bash
 git clone https://github.com/ahmedhamadto/spectra.git
@@ -63,7 +63,7 @@ mkdir -p your-project/.claude/commands
 cp -r spectra/.claude/commands/ your-project/.claude/commands/
 ```
 
-### Global (all projects)
+### Manual — global (all projects)
 
 ```bash
 git clone https://github.com/ahmedhamadto/spectra.git
@@ -162,11 +162,16 @@ Spectra is a set of self-contained [Claude Code](https://docs.anthropic.com/en/d
 
 ```
 spectra/
-├── .claude/commands/
-│   ├── spectra.md         <- /spectra (full four-layer briefing)
-│   ├── spectra-quick.md   <- /spectra-quick (blueprint + trust)
-│   ├── spectra-own.md     <- /spectra-own (ownership cheat sheet)
-│   └── spectra-spec.md    <- /spectra-spec (deep spec alignment)
+├── skills/                          <- skillsadd installs from here
+│   ├── spectra/SKILL.md             <- /spectra (full four-layer briefing)
+│   ├── spectra-quick/SKILL.md       <- /spectra-quick (blueprint + trust)
+│   ├── spectra-own/SKILL.md         <- /spectra-own (ownership cheat sheet)
+│   └── spectra-spec/SKILL.md        <- /spectra-spec (deep spec alignment)
+├── .claude/commands/                <- manual install copies from here
+│   ├── spectra.md
+│   ├── spectra-quick.md
+│   ├── spectra-own.md
+│   └── spectra-spec.md
 ├── .github/ISSUE_TEMPLATE/
 │   ├── bug-report.md
 │   ├── prompt-improvement.md
