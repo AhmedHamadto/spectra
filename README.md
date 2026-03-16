@@ -12,7 +12,7 @@ Unlike code reviewers that find bugs or linters that enforce style, Spectra give
 ## Quick Start
 
 ```bash
-npx skillsadd ahmedhamadto/spectra
+npx skills add ahmedhamadto/spectra -g
 ```
 
 That's it. No dependencies, no API keys, no config. Start a new Claude Code session and run `/spectra ./src`.
@@ -51,7 +51,7 @@ Spectra fixes this.
 ### One command (recommended)
 
 ```bash
-npx skillsadd ahmedhamadto/spectra
+npx skills add ahmedhamadto/spectra -g
 ```
 
 ### Manual — per-project
@@ -162,7 +162,7 @@ Spectra is a set of self-contained [Claude Code](https://docs.anthropic.com/en/d
 
 ```
 spectra/
-├── skills/                          <- skillsadd installs from here
+├── skills/                          <- skills.sh installs from here
 │   ├── spectra/SKILL.md             <- /spectra (full four-layer briefing)
 │   ├── spectra-quick/SKILL.md       <- /spectra-quick (blueprint + trust)
 │   ├── spectra-own/SKILL.md         <- /spectra-own (ownership cheat sheet)
